@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hendro Collections - Penjahit Profesional Cilacap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg-color: #e0e5ec;
+        --primary-color: #a35709; /* Muted Amber */
+        --text-color: #374151; /* Gray 700 */
+        --light-shadow: -10px -10px 20px #ffffff;
+        --dark-shadow: 10px 10px 20px #c7ced6;
+      }
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+      }
+      h1, h2, h3, h4, .font-display {
+        font-family: 'Playfair Display', serif;
+        color: #1f2937;
+      }
+      .neumo-card {
+        background: var(--bg-color);
+        border-radius: 20px;
+        box-shadow: var(--dark-shadow), var(--light-shadow);
+        transition: box-shadow 0.3s ease-in-out;
+      }
+      .neumo-button {
+        background: var(--bg-color);
+        border-radius: 12px;
+        box-shadow: -5px -5px 10px #ffffff, 5px 5px 10px #c7ced6;
+        transition: all 0.2s ease-in-out;
+      }
+      .neumo-button:hover {
+        box-shadow: -2px -2px 5px #ffffff, 2px 2px 5px #c7ced6;
+      }
+      .neumo-button:active {
+        box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #c7ced6;
+      }
+      .neumo-inset {
+        background: var(--bg-color);
+        border-radius: 12px;
+        box-shadow: inset -5px -5px 10px #ffffff, inset 5px 5px 10px #c7ced6;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.95); }
+        to { opacity: 1; transform: scale(1); }
+      }
+      .animate-fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
